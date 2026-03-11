@@ -1,0 +1,17 @@
+<header>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="Context & Cringe" />
+      </a>
+    </div>
+    <nav>
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+      <a href="{{ '/how-it-works/' | relative_url }}" {% if page.url contains 'how-it-works' %}class="active"{% endif %}>How It Works</a>
+      <a href="{{ '/facilitators/' | relative_url }}" {% if page.url contains 'facilitators' %}class="active"{% endif %}>For Facilitators</a>
+      <a href="{{ '/blog/' | relative_url }}" {% if page.url contains 'blog' %}class="active"{% endif %}>Blog</a>
+      <a href="{{ '/about/' | relative_url }}" {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
+      <a href="{{ site.buy_url }}" class="nav-cta" target="_blank" rel="noopener">Buy the Game</a>
+    </nav>
+  </div>
+</header>

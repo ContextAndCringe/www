@@ -1,0 +1,55 @@
+---
+layout: default
+title: Blog
+description: Thoughts on privacy, design, and uncomfortable design choices.
+extra_css: |
+  .page-hero{background:var(--black);padding:64px 32px 56px}
+  .page-hero h1{color:var(--white)}
+  .page-hero p{color:rgba(255,255,255,0.55);max-width:640px}
+  .blog-section{background:var(--white)}
+  .empty-state{text-align:center;padding:80px 32px;border:2px dashed #ddd}
+  .empty-state p{font-size:16px;color:var(--muted);margin-bottom:8px}
+  .posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+  .post-card{border:2px solid #eee;padding:28px;transition:border-color 0.2s,transform 0.15s;text-decoration:none;display:block;color:inherit}
+  .post-card:hover{border-color:var(--orange);transform:translateY(-3px)}
+  .post-date{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .post-title{font-size:20px;font-weight:800;line-height:1.25;margin-bottom:10px}
+  .post-excerpt{font-size:14px;color:#555;line-height:1.6}
+---
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-label">[ Blog ]</div>
+    <h1>Thoughts on privacy,<br>context, and <em>discomfort.</em></h1>
+    <p>Writing from Kim and Avi on privacy engineering, game design, and why context changes everything.</p>
+  </div>
+</section>
+
+<div class="hazard"></div>
+
+<section class="section blog-section">
+  <div class="section-inner">
+
+    {% assign posts = site.posts %}
+    {% if posts.size > 0 %}
+      <div class="posts-grid">
+        {% for post in posts %}
+        <a class="post-card" href="{{ post.url | relative_url }}">
+          <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+          <div class="post-title">{{ post.title }}</div>
+          {% if post.excerpt %}
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="empty-state">
+        <p style="font-size:32px;margin-bottom:16px">✍️</p>
+        <p><strong>Posts coming soon.</strong></p>
+        <p>Check back for writing on privacy, design, and what makes things feel uncomfortable.</p>
+      </div>
+    {% endif %}
+
+  </div>
+</section>

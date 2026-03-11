@@ -1,0 +1,14 @@
+title: Context & Cringe
+description: A card game about apps, data, and uncomfortable design choices.
+baseurl: ""
+url: "https://contextandcringe.com"
+
+buy_url: "https://cybersecgames.com/collections/privacy/products/context-cringe"
+
+markdown: kramdown
+permalink: /:title/
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

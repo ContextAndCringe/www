@@ -1,0 +1,223 @@
+---
+layout: default
+title: About
+description: Why Context & Cringe exists, and the people who made it.
+extra_css: |
+  .page-hero{background:var(--black);padding:64px 32px 56px}
+  .page-hero h1{color:var(--white)}
+  .page-hero p{color:rgba(255,255,255,0.55);max-width:640px}
+  .why-section{background:var(--white)}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .why-text p{font-size:16px;line-height:1.8;color:#444;margin-bottom:16px}
+  .why-text p:last-child{margin-bottom:0}
+  .why-pull{background:var(--blue);border:3px solid var(--black);box-shadow:5px -5px 0 var(--black);padding:32px}
+  .why-pull p{font-size:16px;line-height:1.75;color:var(--black);margin-bottom:14px}
+  .why-pull p:last-child{margin-bottom:0}
+  .why-pull .kicker{font-size:19px;font-weight:800;font-style:italic;border-top:2px solid rgba(0,0,0,0.15);padding-top:16px;margin-top:4px}
+  .game-section{background:var(--gray)}
+  .game-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .game-text p{font-size:16px;line-height:1.8;color:#444;margin-bottom:16px}
+  .game-text p:last-child{margin-bottom:0}
+  .game-demo{background:var(--white);border:3px solid var(--black);box-shadow:5px -5px 0 var(--black);padding:32px;display:flex;flex-direction:column;gap:20px}
+  .mini-card-row{display:flex;gap:8px;align-items:center}
+  .mini-card{flex:1;background:var(--white);border:2px solid var(--black);padding:14px 10px;text-align:center;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:0.04em}
+  .mini-card.app{border-top:5px solid var(--orange);color:var(--orange)}
+  .mini-card.feat{border-top:5px solid var(--pink);color:var(--pink)}
+  .mini-card.data{border-top:5px solid var(--blue);color:var(--blue)}
+  .mini-plus{font-size:18px;font-weight:900;color:var(--black);flex-shrink:0}
+  .mini-vote-row{display:flex;gap:10px}
+  .mini-vote{flex:1;padding:10px 14px;border:2px solid var(--black);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:0.05em;background:var(--white)}
+  .mini-vote.comfy{border-left:4px solid var(--blue)}
+  .mini-vote.cringe{border-left:4px solid var(--pink)}
+  .game-note{font-size:13px;font-style:italic;color:var(--muted);border-top:1px solid #eee;padding-top:16px;line-height:1.6}
+  .creators-section{background:var(--white)}
+  .creators-intro{font-size:16px;color:var(--muted);margin-bottom:48px;line-height:1.7;max-width:640px}
+  .creator-cards{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  .creator-card{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
+  .creator-photo-wrap{width:140px;height:160px;position:relative;cursor:pointer;perspective:900px;flex-shrink:0}
+  .creator-photo-inner{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform 0.55s cubic-bezier(0.4,0,0.2,1)}
+  .creator-photo-wrap:hover .creator-photo-inner{transform:rotateY(180deg)}
+  .creator-face,.creator-hero{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
+  .creator-face img{width:140px;height:160px;object-fit:cover;object-position:center top;border:3px solid var(--black);box-shadow:4px -4px 0 var(--black);display:block}
+  .creator-hero{transform:rotateY(180deg);background:var(--black);border:3px solid var(--black);box-shadow:4px -4px 0 rgba(0,0,0,0.3);display:flex;align-items:flex-end;justify-content:center}
+  .creator-hero img{width:100%;height:160px;object-fit:contain;object-position:bottom center;display:block}
+  .hover-hint{position:absolute;bottom:-20px;left:0;right:0;text-align:center;font-size:9px;font-weight:800;letter-spacing:0.12em;color:var(--muted);text-transform:uppercase;opacity:0.7;transition:opacity 0.2s}
+  .creator-photo-wrap:hover .hover-hint{opacity:0}
+  .creator-info{padding-top:4px}
+  .creator-name{font-size:22px;font-weight:900;letter-spacing:-0.01em;margin-bottom:2px}
+  .creator-role{font-size:12px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+  .creator-bio{font-size:14px;line-height:1.7;color:#444}
+  .philosophy-section{background:var(--gray)}
+  .philosophy-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .philosophy-text p{font-size:16px;line-height:1.8;color:#444;margin-bottom:16px}
+  .philosophy-text p:last-child{margin-bottom:0}
+  .philosophy-aside{background:var(--black);color:var(--white);padding:32px;border-top:6px solid var(--orange)}
+  .philosophy-aside p{font-size:15px;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:14px}
+  .philosophy-aside .aside-kicker{font-size:18px;font-weight:800;color:var(--orange);font-style:italic;margin-bottom:0}
+  .goal-section{background:var(--white)}
+  .goal-block{max-width:680px;margin:0 auto;text-align:center;padding:24px 0}
+  .goal-block .section-label{display:block;margin-bottom:20px}
+  .goal-block h2{font-size:clamp(28px,4vw,46px);font-weight:900;letter-spacing:-0.02em;line-height:1.1;margin-bottom:28px}
+  .goal-block p{font-size:17px;line-height:1.8;color:#444;margin-bottom:16px}
+  .goal-kicker{display:inline-block;background:var(--black);color:var(--white);font-size:17px;font-weight:700;font-style:italic;padding:20px 28px;margin:24px 0;border-left:5px solid var(--orange);text-align:left;line-height:1.7}
+  .cta-section{background:var(--orange);padding:72px 32px;text-align:center;position:relative;overflow:hidden}
+  .cta-section::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent 0,transparent 30px,rgba(0,0,0,0.04) 30px,rgba(0,0,0,0.04) 60px);pointer-events:none}
+  .cta-inner{position:relative;z-index:1;max-width:600px;margin:auto}
+  .cta-inner h2{font-size:clamp(28px,4vw,48px);font-weight:900;color:var(--white);text-transform:uppercase;letter-spacing:-0.02em;line-height:1.05;margin-bottom:32px}
+  .cta-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+---
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-label">[ About ]</div>
+    <h1>Why this game <em>exists.</em></h1>
+    <p>A card game born from years of privacy trainings, uncomfortable moments, and the repeated observation that people understand privacy best when they feel it first.</p>
+  </div>
+</section>
+
+<div class="hazard"></div>
+
+<!-- WHY THIS GAME EXISTS -->
+<section class="section why-section">
+  <div class="section-inner">
+    <span class="section-label">[ Why This Game Exists ]</span>
+    <h2 class="section-title">Privacy problems rarely announce themselves.</h2>
+    <div class="why-grid">
+      <div class="why-text">
+        <p>They emerge when data, features, and context combine in ways that suddenly feel uncomfortable. A piece of data might seem harmless. A feature might seem reasonable. But together, in a specific app, something suddenly feels wrong.</p>
+        <p>In our privacy trainings, we repeatedly saw that people only truly understood the impact of these combinations when they felt that moment of discomfort.</p>
+        <p>That reaction, the moment of &ldquo;cringe,&rdquo; often appears before people can explain why.</p>
+        <p>Context &amp; Cringe was created to make that moment visible. Not to replace structured analysis, but to surface the instinctive signal that something deserves closer attention.</p>
+      </div>
+      <div class="why-pull">
+        <p>Privacy impact is often felt before it is fully understood.</p>
+        <p class="kicker">The game makes that feeling the starting point.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT THE GAME -->
+<section class="section game-section">
+  <div class="section-inner">
+    <span class="section-label">[ About the Game ]</span>
+    <h2 class="section-title">Discussion-driven. Deceptively simple.</h2>
+    <div class="game-grid">
+      <div class="game-text">
+        <p>Players combine three cards, pitch their idea in 30 seconds, and let everyone else judge whether it feels acceptable or deeply uncomfortable.</p>
+        <p>The goal is simple: make your own app feel acceptable. Make everyone else&rsquo;s feel deeply uncomfortable.</p>
+        <p>But the real value happens in the discussions that follow. Players quickly discover that privacy problems rarely come from one element alone &mdash; they emerge from how everything fits together.</p>
+      </div>
+      <div class="game-demo">
+        <div class="mini-card-row">
+          <div class="mini-card app">App</div>
+          <div class="mini-plus">+</div>
+          <div class="mini-card feat">Feature</div>
+          <div class="mini-plus">+</div>
+          <div class="mini-card data">Data</div>
+        </div>
+        <p style="font-size:13px;color:var(--muted);font-weight:600;text-align:center;letter-spacing:0.05em;text-transform:uppercase">Pitch in 30 seconds. Then vote:</p>
+        <div class="mini-vote-row">
+          <div class="mini-vote comfy">Comfy</div>
+          <div class="mini-vote cringe">Cringe</div>
+        </div>
+        <p class="game-note">The real game is not the score. It is the moment when someone says &ldquo;Wait... I would not be comfortable with that.&rdquo;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hazard-pink"></div>
+
+<!-- THE CREATORS -->
+<section class="section creators-section">
+  <div class="section-inner">
+    <span class="section-label">[ The Creators ]</span>
+    <h2 class="section-title">Made by people who have had<br>these conversations for years.</h2>
+    <p class="creators-intro">Context &amp; Cringe was created by Kim Wuyts and Avi Douglen. It grew directly out of the trainings and workshops they have delivered at security conferences and within organizations around the world. <em style="font-size:13px;color:#aaa">(Hover the photos for a surprise.)</em></p>
+
+    <div class="creator-cards">
+
+      <div class="creator-card">
+        <div class="creator-photo-wrap">
+          <div class="creator-photo-inner">
+            <div class="creator-face"><img src="{{ '/assets/images/kim.png' | relative_url }}" alt="Kim Wuyts" /></div>
+            <div class="creator-hero"><img src="{{ '/assets/images/professorprivacy.png' | relative_url }}" alt="Professor Privacy" /></div>
+          </div>
+          <div class="hover-hint">Hover me</div>
+        </div>
+        <div class="creator-info">
+          <div class="creator-name">Kim Wuyts</div>
+          <div class="creator-role">Privacy Engineer</div>
+          <p class="creator-bio">Kim is a privacy engineer and researcher focused on making privacy usable in real-world systems. Her work bridges the gap between privacy theory and engineering practice, helping teams design systems that respect users while remaining technically practical. Kim frequently speaks about how context shapes privacy risks in modern applications.</p>
+        </div>
+      </div>
+
+      <div class="creator-card">
+        <div class="creator-photo-wrap">
+          <div class="creator-photo-inner">
+            <div class="creator-face"><img src="{{ '/assets/images/avi.png' | relative_url }}" alt="Avi Douglen" /></div>
+            <div class="creator-hero"><img src="{{ '/assets/images/captainsecurity.png' | relative_url }}" alt="Captain Security" /></div>
+          </div>
+          <div class="hover-hint">Hover me</div>
+        </div>
+        <div class="creator-info">
+          <div class="creator-name">Avi Douglen</div>
+          <div class="creator-role">Application Security Veteran</div>
+          <p class="creator-bio">Avi is a long-time application security expert, trainer, and community leader. He has spent years helping engineers understand how design decisions translate into real-world security risks, known for bringing complex security concepts to life through engaging talks, practical examples, and a healthy dose of humor.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="section philosophy-section">
+  <div class="section-inner">
+    <span class="section-label">[ A Slightly Different Way to Talk About Privacy ]</span>
+    <h2 class="section-title">Serious topics sometimes land better<br>with a little playfulness.</h2>
+    <div class="philosophy-grid">
+      <div class="philosophy-text">
+        <p>Over the years, Kim and Avi discovered that privacy conversations often become clearer when approached from unexpected angles.</p>
+        <p>At one point, they even delivered privacy talks as cartoon-style characters: Professor Privacy and Captain Security.</p>
+        <p>The lesson was simple: people engage differently when the format invites them to play rather than just listen.</p>
+        <p>Context &amp; Cringe follows the same philosophy. It is a game. But the conversations it creates are very real.</p>
+      </div>
+      <div class="philosophy-aside">
+        <p>They once showed up to a security conference as cartoon superheroes to talk about privacy.</p>
+        <p>It worked.</p>
+        <p class="aside-kicker">Context &amp; Cringe is the next iteration of that idea.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE REAL GOAL -->
+<section class="section goal-section">
+  <div class="section-inner">
+    <div class="goal-block">
+      <span class="section-label">[ The Real Goal ]</span>
+      <h2>Better questions lead to better systems.</h2>
+      <p>The game does not provide the final answer to privacy design. Instead, it helps people recognize the moment when something feels wrong.</p>
+      <div class="goal-kicker">
+        That moment is where better questions start.<br>
+        And better questions are where better systems begin.
+      </div>
+      <p>Because privacy impact is often felt before it is fully understood.</p>
+    </div>
+  </div>
+</section>
+
+<div class="hazard"></div>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2>Ready to feel the cringe?</h2>
+    <div class="cta-buttons">
+      <a href="{{ site.buy_url }}" class="btn-white" target="_blank" rel="noopener">Buy the Game &rarr;</a>
+      <a href="{{ '/how-it-works/' | relative_url }}" class="btn-outline">How It Works</a>
+    </div>
+  </div>
+</section>
