@@ -34,8 +34,8 @@ extra_css: |
   .vote-pill { display:flex; align-items:center; gap:14px; padding:10px 20px; background:var(--white); border:none; border-left:5px solid var(--black); font-size:14px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; color:var(--black); padding-left:16px; }
   .vote-pill.comfy { border-left-color:var(--blue); }
   .vote-pill.cringe-pill { border-left-color:var(--pink); }
-  .token-comfy { background-image:url('/assets/images/context-token.png'); background-size:210% auto; width:44px; height:44px; border-radius:50%; flex-shrink:0; }
-  .token-cringe { background-image:url('/assets/images/cringe-token.png'); background-size:210% auto; width:44px; height:44px; border-radius:50%; flex-shrink:0; }
+  .token-comfy { background-image:url('/assets/images/context-token.png'); width:44px; height:44px; border-radius:50%; flex-shrink:0; }
+  .token-cringe { background-image:url('/assets/images/cringe-token.png'); width:44px; height:44px; border-radius:50%; flex-shrink:0; }
   .how-footnote { margin-top:16px; font-size:13px; color:rgba(255,255,255,0.45); font-style:italic; }
   .why-section { background:var(--white); }
   .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:36px; }
@@ -120,9 +120,7 @@ extra_css: |
         </div>
       </div>
       <div class="game-photo-placeholder">
-        <img src="./assets/images/box.png" width="36" height="36" style="width:36; height:36;">
-        <span>Game components photo</span>
-        <span style="font-size:11px">(cards, box, tokens)</span>
+        <img src="./assets/images/box.png" style="max-width:100%; max-height:100;">
       </div>
     </div>
   </div>
@@ -182,8 +180,8 @@ extra_css: |
     <div class="why-grid">
       <div class="why-card">
         <div class="why-num">01 &mdash; Context</div>
-        <h3>Context beats categories</h3>
-        <p>No single card is the problem. But combine the wrong app, feature, and data, and suddenly the room goes quiet. Privacy risks don’t live in categories. They emerge from context.</p>
+        <h3>Context beats data</h3>
+        <p>No single card is the problem. But combine the wrong app, feature, and data, and suddenly the room goes quiet. Privacy risks are not just about data. They emerge from context.</p>
       </div>
       <div class="why-card">
         <div class="why-num">02 &mdash; Reaction</div>
@@ -214,7 +212,7 @@ extra_css: |
           <div class="who-item">Privacy Engineers &amp; DPOs</div>
           <div class="who-item">Product Managers &amp; Designers</div>
           <div class="who-item">Developers &amp; Architects</div>
-          <div class="who-item">Legal &amp; Compliance</div>
+          <div class="who-item">Privacy Enthusiasts</div>
         </div>
       </div>
       <div class="who-col">
