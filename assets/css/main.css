@@ -108,15 +108,16 @@ nav .nav-cta:hover { background: transparent; color: var(--orange); }
 
 /* ── TOKEN IMAGES ── */
 .token-comfy {
-  background-image: url('/assets/images/tokens.png');
-  background-size: 210% auto; background-position: 5% center;
-  width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+  background-image: url('/assets/images/context-token.png');
+  background-size: 100% auto; 
+  width: 44px; height: 44px; 
 }
 .token-cringe {
-  background-image: url('/assets/images/tokens.png');
-  background-size: 210% auto; background-position: 95% center;
-  width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+  background-image: url('/assets/images/cringe-token.png');
+  background-size: 100% auto; 
+  width: 44px; height: 44px; 
 }
+
 
 /* ── BUTTONS ── */
 .btn-primary {
