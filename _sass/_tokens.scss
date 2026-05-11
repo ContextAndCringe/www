@@ -1,10 +1,4 @@
-.token-comfy {
-  background-image: url('/assets/images/context-token.png');
-  background-size: 100% auto;
-  width: 44px; height: 44px;
-}
-.token-cringe {
-  background-image: url('/assets/images/cringe-token.png');
-  background-size: 100% auto;
-  width: 44px; height: 44px;
-}
+.token-comfy,
+.token-cringe { width: 44px; height: 44px; background-size: 100% auto; }
+.token-comfy  { background-image: url('/assets/images/context-token.png'); }
+.token-cringe { background-image: url('/assets/images/cringe-token.png'); }

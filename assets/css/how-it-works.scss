@@ -28,9 +28,12 @@
 .mode-tab.main-tab { border-bottom-color: var(--blue); color: var(--blue); }
 .mode-tab.speed-tab:hover { color: var(--pink); }
 .mode-tab-dot { width: 8px; height: 8px; border-radius: 50%; }
+.main-tab .mode-tab-dot { background: var(--blue); }
+.speed-tab .mode-tab-dot { background: var(--pink); }
 
 .main-game { background: var(--blue); }
 .main-game .section-title { color: var(--black); }
+.main-game .section-label { color: var(--black); opacity: 0.6; }
 .section-subtitle { font-size: 18px; font-weight: 600; color: var(--black); margin-bottom: 32px; }
 
 .card-trio { display: flex; gap: 0; margin: 40px 0 16px; align-items: stretch; }
@@ -55,6 +58,7 @@
 .why-block .signal { font-size: 17px; font-weight: 700; color: var(--orange); font-style: italic; margin-top: 20px; }
 
 .speed-section { background: var(--black); color: var(--white); position: relative; overflow: hidden; }
+.speed-section .section-label { color: var(--pink); }
 .speed-section::before {
   content: "";
   position: absolute;
@@ -62,6 +66,7 @@
   pointer-events: none;
   background-image: radial-gradient(ellipse 800px 400px at 80% 50%, rgba(237,68,141,0.06) 0%, transparent 70%);
 }
+.speed-lead { color: rgba(255,255,255,0.45); font-size: 18px; font-weight: 600; margin-bottom: 40px; }
 .speed-title-block { display: flex; flex-direction: column; gap: 2px; margin-bottom: 8px; }
 .st-main { font-size: clamp(40px,6vw,72px); font-weight: 900; color: var(--pink); letter-spacing: -0.02em; line-height: 0.95; }
 .st-sub { font-size: clamp(16px,2vw,24px); font-weight: 700; color: rgba(255,255,255,0.4); letter-spacing: 0.05em; text-transform: uppercase; }
@@ -76,6 +81,7 @@
 .speed-callout { border: 2px solid var(--pink); padding: 24px 28px; margin: 0 0 36px; display: flex; gap: 20px; align-items: flex-start; }
 .speed-callout-accent { font-size: 32px; font-weight: 900; color: var(--pink); flex-shrink: 0; line-height: 1; }
 .speed-callout p { font-size: 15px; color: rgba(255,255,255,0.7); line-height: 1.65; }
+.speed-callout p strong { color: var(--white); }
 
 .speed-why { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); padding: 32px; margin-top: 36px; }
 .speed-why h3 { font-size: 16px; font-weight: 800; color: var(--pink); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
