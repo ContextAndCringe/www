@@ -30,25 +30,48 @@ page_css: /assets/css/how-it-works.css
       <div class="card-plus">+</div>
       <div class="game-card data"><div class="card-type">Card 3</div><div class="card-name blue">Data</div><div class="card-example">e.g. Location History</div></div>
     </div>
-
     <div class="steps">
-      <div class="step"><div class="step-num">1</div><div class="step-body"><h3>Draw Cards</h3><p>Everyone has two cards of each type. Three card types, plenty of combinations.</p></div></div>
-      <div class="step"><div class="step-num">2</div><div class="step-body"><h3>Build Scenarios</h3><p>Players place cards to complete app combinations. One App, one Feature, one Data type.</p></div></div>
-      <div class="step"><div class="step-num">3</div><div class="step-body"><h3>Pitch Your App</h3><p>You have 30 seconds to explain why your app makes sense. Make it convincing.</p></div></div>
-      <div class="step"><div class="step-num">4</div><div class="step-body"><h3>Judge the Cringe</h3><p>Everyone else votes. Every cringe vote adds to your score. Lowest cringe score wins.</p></div></div>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Draw Cards</h3>
+          <p>Everyone has two cards of each type. Three card types, plenty of combinations.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Build Scenarios</h3>
+          <p>Players place cards to complete app combinations. One App, one Feature, one Data type.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Pitch Your App</h3>
+          <p>You have 30 seconds to explain why your app makes sense. Make it convincing.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Judge the Cringe</h3>
+          <p>Everyone else votes. Every cringe vote adds to your score. Lowest cringe score wins.</p>
+        </div>
+      </div>
     </div>
     <div class="vote-block">
       <p>Everyone else votes:</p>
       <div class="vote-row">
-        <div class="vote-pill comfy"><div class="token-comfy"></div><span>Comfy &ndash; seems acceptable</span></div>
-        <div class="vote-pill cringe-pill"><div class="token-cringe"></div><span>Cringe &ndash; something feels wrong</span></div>
+        <div class="vote-pill comfy"><div class="token-comfy"></div><span>Comfy – seems acceptable</span></div>
+        <div class="vote-pill cringe-pill"><div class="token-cringe"></div><span>Cringe – something feels wrong</span></div>
       </div>
     </div>
     <p class="scoring-note">The real game is not winning. It is the moment when someone says: <strong>"Wait... I would not be comfortable with that."</strong></p>
     <div class="why-block">
       <span class="section-label">[ Why That Works ]</span>
       <h3>Privacy risks rarely appear in isolation.</h3>
-      <p>They emerge when data, features, and context combine. A piece of data might seem harmless. A feature might seem reasonable. But together &ndash; in a particular app &ndash; something suddenly feels wrong.</p>
+      <p>They emerge when data, features, and context combine. A piece of data might seem harmless. A feature might seem reasonable. But together – in a particular app – something suddenly feels wrong.</p>
       <p>The game helps people notice that moment and start asking why.</p>
       <p class="signal">That reaction is the signal.</p>
     </div>
@@ -63,10 +86,26 @@ page_css: /assets/css/how-it-works.css
     <div class="speed-title-block"><span class="st-main">Speed Cringe</span><span class="st-sub">Fast-paced variant</span></div>
     <p class="speed-lead">Less discussion. Faster discomfort.</p>
     <div class="speed-flow">
-      <div class="speed-step"><div class="speed-step-num">Step 1</div><h3>The Regulator</h3><p>One player becomes the Regulator each round. They set the scene.</p></div>
-      <div class="speed-step"><div class="speed-step-num">Step 2</div><h3>Set the Scenario</h3><p>The Regulator places one or two cards on the table as the starting combination.</p></div>
-      <div class="speed-step"><div class="speed-step-num">Step 3</div><h3>Build the Worst App</h3><p>Everyone else secretly completes the combination. The goal: make it as unacceptable as possible.</p></div>
-      <div class="speed-step"><div class="speed-step-num">Step 4</div><h3>The Regulator Decides</h3><p>They pick the most unacceptable scenario. That player gets the cards as Fines.</p></div>
+      <div class="speed-step">
+        <div class="speed-step-num">Step 1</div>
+        <h3>The Regulator</h3>
+        <p>One player becomes the Regulator each round. They set the scene.</p>
+      </div>
+      <div class="speed-step">
+        <div class="speed-step-num">Step 2</div>
+        <h3>Set the Scenario</h3>
+        <p>The Regulator places one or two cards on the table as the starting combination.</p>
+      </div>
+      <div class="speed-step">
+        <div class="speed-step-num">Step 3</div>
+        <h3>Build the Worst App</h3>
+        <p>Everyone else secretly completes the combination. The goal: make it as unacceptable as possible.</p>
+      </div>
+      <div class="speed-step">
+        <div class="speed-step-num">Step 4</div>
+        <h3>The Regulator Decides</h3>
+        <p>They pick the most unacceptable scenario. That player gets the cards as Fines.</p>
+      </div>
     </div>
     <div class="speed-callout">
       <div class="speed-callout-accent">!</div>

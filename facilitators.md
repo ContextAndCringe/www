@@ -5,20 +5,18 @@ description: Bring Context & Cringe to your team, workshop, or conference sessio
 page_css: /assets/css/facilitators.css
 ---
 
-<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">[ For Facilitators ]</div>
     <h1>Bring Context &amp; Cringe<br>to <em>Your Team</em></h1>
     <p>Context &amp; Cringe is designed to spark conversations about privacy that rarely happen in traditional discussions.</p>
     <p>You can run it with friends, but it becomes especially powerful when used in teams, workshops, classrooms, or conference sessions.</p>
-    <div class="hero-accent">With a bit of facilitation, the game can help people move from &ldquo;this feels weird&rdquo; to &ldquo;here is why.&rdquo;</div>
+    <div class="hero-accent">With a bit of facilitation, the game can help people move from "this feels weird" to "here is why."</div>
   </div>
 </section>
 
 <div class="hazard"></div>
 
-<!-- FACILITATION TIERS -->
 <section class="section ways-section">
   <div class="section-inner">
     <span class="section-label">[ Ways to Facilitate ]</span>
@@ -27,7 +25,6 @@ page_css: /assets/css/facilitators.css
 
     <div class="tiers">
 
-      <!-- INDEPENDENT -->
       <div class="tier independent">
         <div class="tier-header">
           <span class="tier-badge">Independent</span>
@@ -35,8 +32,8 @@ page_css: /assets/css/facilitators.css
           <p class="tier-sub">Self-run. Productive discomfort.</p>
         </div>
         <div class="tier-body">
-          <p>The game works well on its own. Players run it themselves and quickly start reacting to uncomfortable design choices &mdash; no facilitation required.</p>
-          <p class="tier-quote">&ldquo;Wait... that feels worse than I expected.&rdquo;</p>
+          <p>The game works well on its own. Players run it themselves and quickly start reacting to uncomfortable design choices — no facilitation required.</p>
+          <p class="tier-quote">"Wait... that feels worse than I expected."</p>
           <div>
             <div class="tier-list-label">Perfect for</div>
             <span class="tier-tag">Informal sessions</span>
@@ -45,7 +42,6 @@ page_css: /assets/css/facilitators.css
         </div>
       </div>
 
-      <!-- COORDINATED -->
       <div class="tier coordinated">
         <div class="tier-header">
           <span class="tier-badge">Coordinated</span>
@@ -53,8 +49,8 @@ page_css: /assets/css/facilitators.css
           <p class="tier-sub">Light touch. High reaction.</p>
         </div>
         <div class="tier-body">
-          <p>With light facilitation, the game becomes a more impactful tool for raising privacy awareness. 
-            A facilitator points the players in the right (wrong) direction by introducing the game and objectives, and handling logistics. </p>
+          <p>With light facilitation, the game becomes a more impactful tool for raising privacy awareness.
+            A facilitator points the players in the right (wrong) direction by introducing the game and objectives, and handling logistics.</p>
           <p class="tier-note">The goal is not to reach agreement, but to make people notice when something suddenly feels wrong.</p>
           <div>
             <div class="tier-list-label">Perfect for</div>
@@ -65,7 +61,6 @@ page_css: /assets/css/facilitators.css
         </div>
       </div>
 
-      <!-- GUIDED -->
       <div class="tier guided">
         <div class="tier-header">
           <span class="tier-badge">Guided</span>
@@ -73,9 +68,9 @@ page_css: /assets/css/facilitators.css
           <p class="tier-sub">Structure. Discussion. Educational.</p>
         </div>
         <div class="tier-body">
-          <p>With more intentional facilitation, the game becomes a deeper educational exercise. 
-            The facilitator challenges participants to move beyond &ldquo;that feels cringey&rdquo; 
-            and start exploring what contextual factors caused the reaction &mdash; and how the same reasoning applies to real systems.</p>
+          <p>With more intentional facilitation, the game becomes a deeper educational exercise.
+            The facilitator challenges participants to move beyond "that feels cringey"
+            and start exploring what contextual factors caused the reaction — and how the same reasoning applies to real systems.</p>
           <div>
             <div class="tier-list-label">Perfect for</div>
             <span class="tier-tag">Privacy training</span>
@@ -89,7 +84,6 @@ page_css: /assets/css/facilitators.css
   </div>
 </section>
 
-<!-- WHY FACILITATE -->
 <section class="section why-section">
   <div class="section-inner">
     <span class="section-label">[ Why Facilitate? ]</span>
@@ -113,7 +107,6 @@ page_css: /assets/css/facilitators.css
 
 <div class="hazard"></div>
 
-<!-- USE IT IN -->
 <section class="section use-section">
   <div class="section-inner">
     <span class="section-label">[ Use It In ]</span>
@@ -131,7 +124,6 @@ page_css: /assets/css/facilitators.css
   </div>
 </section>
 
-<!-- RESOURCES -->
 <section class="section resources-section">
   <div class="section-inner">
     <span class="section-label">[ Resources ]</span>
@@ -158,7 +150,6 @@ page_css: /assets/css/facilitators.css
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta-section">
   <div class="cta-inner">
     <span class="section-label">[ Ready? ]</span>
@@ -166,7 +157,7 @@ page_css: /assets/css/facilitators.css
     <p class="cta-steps-text">Grab the deck.<br>Gather a group.<br>Start combining cards.</p>
     <div class="cta-kicker">
       Then wait for someone to say:<br>
-      <strong>&ldquo;Umm... I am not comfortable with that.&rdquo;</strong><br>
+      <strong>"Umm... I am not comfortable with that."</strong><br>
       <span class="cta-note">That is where the interesting conversations begin.</span>
     </div>
     <div class="cta-buttons">
