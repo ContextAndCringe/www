@@ -1,0 +1,8 @@
+.page-hero { background: var(--black); padding: 64px 32px 56px; }
+.page-hero-inner { max-width: 860px; }
+.page-hero h1 {
+  font-size: clamp(36px, 5vw, 64px); font-weight: 900;
+  letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 20px; color: var(--white);
+}
+.page-hero h1 em { font-style: normal; color: var(--orange); }
+.page-hero p { font-size: 18px; color: rgba(255,255,255,0.55); line-height: 1.75; max-width: 640px; }

@@ -1,5 +1,5 @@
-/* .page-hero base styles (black bg, padding, h1, p) are provided by main.css */
-
+---
+---
 .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
 .why-text p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 16px; }
 .why-text p:last-child { margin-bottom: 0; }
@@ -37,8 +37,6 @@
 .creator-face img { width: 140px; height: 160px; object-fit: cover; object-position: center top; border: 3px solid var(--black); box-shadow: 4px -4px 0 var(--black); display: block; }
 .creator-hero { transform: rotateY(180deg); background: var(--black); border: 3px solid var(--black); box-shadow: 4px -4px 0 rgba(0,0,0,0.3); display: flex; align-items: flex-end; justify-content: center; }
 .creator-hero img { width: 100%; height: 160px; object-fit: contain; object-position: bottom center; display: block; }
-.hover-hint { position: absolute; bottom: -20px; left: 0; right: 0; text-align: center; font-size: 9px; font-weight: 800; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; opacity: 0.7; transition: opacity 0.2s; }
-.creator-photo-wrap:hover .hover-hint { opacity: 0; }
 .creator-info { padding-top: 4px; }
 .creator-name { font-size: 22px; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 2px; }
 .creator-role { font-size: 12px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange); margin-bottom: 14px; }

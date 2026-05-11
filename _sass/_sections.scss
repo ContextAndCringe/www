@@ -1,0 +1,15 @@
+.section { padding: 72px 32px; }
+.section-inner { max-width: 1000px; margin: auto; }
+.section-label {
+  display: inline-block; font-size: 12px; font-weight: 800;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--orange); margin-bottom: 14px;
+}
+.section-title {
+  font-size: clamp(26px, 3.5vw, 44px); font-weight: 900;
+  line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 24px;
+}
+.section-intro {
+  font-size: 17px; color: var(--muted); line-height: 1.7;
+  max-width: 680px; margin-bottom: 48px;
+}

@@ -1,4 +1,6 @@
-.page-hero { background: var(--white); padding: 64px 32px 56px; border-bottom: 1px solid #eee; }
+---
+---
+.page-hero { background: var(--white); border-bottom: 1px solid #eee; }
 .page-hero h1 { color: var(--black); }
 .page-hero p { color: var(--muted); }
 .hero-accent { display: inline-block; font-size: 15px; font-weight: 700; font-style: italic; color: var(--black); background: var(--gray); border-left: 4px solid var(--orange); padding: 12px 20px; margin-top: 8px; }
@@ -23,7 +25,6 @@
 .tier-list-label { font-size: 11px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
 .tier-tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 4px 10px; background: var(--gray); color: var(--black); margin: 3px 4px 0 0; }
 
-/* .why-section background is provided by main.css */
 .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
 .why-text p { font-size: 16px; line-height: 1.75; color: #444; margin-bottom: 16px; }
 .why-text p:last-child { margin-bottom: 0; }
