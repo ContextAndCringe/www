@@ -5,7 +5,6 @@ description: A card game about apps, data, and uncomfortable design choices.
 page_css: /assets/css/index.css
 ---
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-waves">
     <svg class="w1" viewBox="0 0 400 400" fill="none">
@@ -38,7 +37,7 @@ page_css: /assets/css/index.css
     </div>
     <p class="hero-sub">A card game about privacy, context, and uncomfortable design choices.</p>
     <div class="hero-buttons">
-      <a href="{{ site.buy_url }}" class="btn-primary" target="_blank" rel="noopener">Buy the Game &rarr;</a>
+      <a href="{{ site.buy_url }}" class="btn-primary" target="_blank" rel="noopener">Buy the Game →</a>
       <a href="{{ '/how-it-works/' | relative_url }}" class="btn-secondary">See How It Works</a>
     </div>
   </div>
@@ -46,7 +45,6 @@ page_css: /assets/css/index.css
 
 <div class="hazard"></div>
 
-<!-- WHAT IT IS -->
 <section class="section what-section">
   <div class="section-inner">
     <span class="section-label">[ What is this? ]</span>
@@ -68,7 +66,6 @@ page_css: /assets/css/index.css
 
 <div class="hazard-pink"></div>
 
-<!-- HOW IT WORKS -->
 <section class="section how-section">
   <div class="section-inner">
     <span class="section-label">[ How it works ]</span>
@@ -98,11 +95,11 @@ page_css: /assets/css/index.css
       <div class="vote-row">
         <div class="vote-pill comfy">
           <div class="token-comfy"></div>
-          <span>Comfy &ndash; seems acceptable</span>
+          <span>Comfy – seems acceptable</span>
         </div>
         <div class="vote-pill cringe-pill">
           <div class="token-cringe"></div>
-          <span>Cringe &ndash; something feels wrong</span>
+          <span>Cringe – something feels wrong</span>
         </div>
       </div>
       <p class="how-footnote">Lowest cringe score wins. The discussions are where the real value happens.</p>
@@ -112,26 +109,25 @@ page_css: /assets/css/index.css
 
 <div class="hazard"></div>
 
-<!-- WHY IT WORKS -->
 <section class="section why-section">
   <div class="section-inner">
     <span class="section-label">[ Why it works ]</span>
     <h2 class="section-title">Because privacy is felt<br>before it's understood.</h2>
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-num">01 &mdash; Context</div>
+        <div class="why-num">01 — Context</div>
         <h3>Context beats data</h3>
         <p>No single card is the problem. But combine the wrong app, feature, and data, and suddenly the room goes quiet. Privacy risks are not just about data. They emerge from context.</p>
       </div>
       <div class="why-card">
-        <div class="why-num">02 &mdash; Reaction</div>
+        <div class="why-num">02 — Reaction</div>
         <h3>The signal matters</h3>
-        <p>Players don’t start with legal analysis. They start with a gut reaction. That instant discomfort is the signal. Once you notice it, you start asking the real question: Why did that feel wrong?</p>
+        <p>Players don't start with legal analysis. They start with a gut reaction. That instant discomfort is the signal. Once you notice it, you start asking the real question: Why did that feel wrong?</p>
       </div>
       <div class="why-card">
-        <div class="why-num">03 &mdash; Judgment</div>
+        <div class="why-num">03 — Judgment</div>
         <h3>No right answers</h3>
-        <p>Different players react differently. That disagreement is the point. Privacy decisions can’t be fully automated. They require human judgment, negotiation, and context. The game makes that visible..</p>
+        <p>Different players react differently. That disagreement is the point. Privacy decisions can't be fully automated. They require human judgment, negotiation, and context. The game makes that visible.</p>
       </div>
     </div>
   </div>
@@ -139,7 +135,6 @@ page_css: /assets/css/index.css
 
 <div class="hazard-pink"></div>
 
-<!-- WHO IT'S FOR -->
 <section class="section who-section">
   <div class="section-inner">
     <span class="section-label">[ Who is this for? ]</span>
@@ -172,7 +167,6 @@ page_css: /assets/css/index.css
 
 <div class="hazard"></div>
 
-<!-- CTA -->
 <section class="cta-section">
   <div class="cta-inner">
     <h2>Ready to test your<br>comfort zone?</h2>
@@ -191,7 +185,7 @@ page_css: /assets/css/index.css
       </div>
     </div>
     <div class="cta-buttons">
-      <a href="{{ site.buy_url }}" class="btn-white" target="_blank" rel="noopener">Buy the Game &rarr;</a>
+      <a href="{{ site.buy_url }}" class="btn-white" target="_blank" rel="noopener">Buy the Game →</a>
       <a href="{{ '/how-it-works/' | relative_url }}" class="btn-outline">See How To Play</a>
     </div>
     <p class="cta-sub">Because context changes everything.</p>

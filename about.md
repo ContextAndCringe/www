@@ -15,7 +15,6 @@ page_css: /assets/css/about.css
 
 <div class="hazard"></div>
 
-<!-- WHY THIS GAME EXISTS -->
 <section class="section why-section">
   <div class="section-inner">
     <span class="section-label">[ Why This Game Exists ]</span>
@@ -24,7 +23,7 @@ page_css: /assets/css/about.css
       <div class="why-text">
         <p>They emerge when data, features, and context combine in ways that suddenly feel uncomfortable. A piece of data might seem harmless. A feature might seem reasonable. But together, in a specific app, something suddenly feels wrong.</p>
         <p>In our privacy trainings, we repeatedly saw that people only truly understood the impact of these combinations when they felt that moment of discomfort.</p>
-        <p>That reaction, the moment of &ldquo;cringe,&rdquo; often appears before people can explain why.</p>
+        <p>That reaction, the moment of "cringe," often appears before people can explain why.</p>
         <p>Context &amp; Cringe was created to make that moment visible. Not to replace structured analysis, but to surface the instinctive signal that something deserves closer attention.</p>
       </div>
       <div class="why-pull">
@@ -35,7 +34,6 @@ page_css: /assets/css/about.css
   </div>
 </section>
 
-<!-- ABOUT THE GAME -->
 <section class="section game-section">
   <div class="section-inner">
     <span class="section-label">[ About the Game ]</span>
@@ -43,8 +41,8 @@ page_css: /assets/css/about.css
     <div class="game-grid">
       <div class="game-text">
         <p>Players combine three cards, pitch their idea in 30 seconds, and let everyone else judge whether it feels acceptable or deeply uncomfortable.</p>
-        <p>The goal is simple: make your own app feel acceptable. Make everyone else&rsquo;s feel deeply uncomfortable.</p>
-        <p>But the real value happens in the discussions that follow. Players quickly discover that privacy problems rarely come from one element alone &mdash; they emerge from how everything fits together.</p>
+        <p>The goal is simple: make your own app feel acceptable. Make everyone else's feel deeply uncomfortable.</p>
+        <p>But the real value happens in the discussions that follow. Players quickly discover that privacy problems rarely come from one element alone — they emerge from how everything fits together.</p>
       </div>
       <div class="game-demo">
         <div class="mini-card-row">
@@ -59,7 +57,7 @@ page_css: /assets/css/about.css
           <div class="mini-vote comfy">Comfy</div>
           <div class="mini-vote cringe">Cringe</div>
         </div>
-        <p class="game-note">The point of the game is not winning. It is the moment when someone says &ldquo;Wait... I would not be comfortable with that.&rdquo;</p>
+        <p class="game-note">The point of the game is not winning. It is the moment when someone says "Wait... I would not be comfortable with that."</p>
       </div>
     </div>
   </div>
@@ -67,7 +65,6 @@ page_css: /assets/css/about.css
 
 <div class="hazard-pink"></div>
 
-<!-- THE CREATORS -->
 <section class="section creators-section">
   <div class="section-inner">
     <span class="section-label">[ The Creators ]</span>
@@ -108,7 +105,6 @@ page_css: /assets/css/about.css
   </div>
 </section>
 
-<!-- PHILOSOPHY -->
 <section class="section philosophy-section">
   <div class="section-inner">
     <span class="section-label">[ A Slightly Different Way to Talk About Privacy ]</span>
@@ -129,7 +125,6 @@ page_css: /assets/css/about.css
   </div>
 </section>
 
-<!-- THE REAL GOAL -->
 <section class="section goal-section">
   <div class="section-inner">
     <div class="goal-block">
@@ -147,12 +142,11 @@ page_css: /assets/css/about.css
 
 <div class="hazard"></div>
 
-<!-- CTA -->
 <section class="cta-section">
   <div class="cta-inner">
     <h2>Ready to feel the cringe?</h2>
     <div class="cta-buttons">
-      <a href="{{ site.buy_url }}" class="btn-white" target="_blank" rel="noopener">Buy the Game &rarr;</a>
+      <a href="{{ site.buy_url }}" class="btn-white" target="_blank" rel="noopener">Buy the Game →</a>
       <a href="{{ '/how-it-works/' | relative_url }}" class="btn-outline">How It Works</a>
     </div>
   </div>
