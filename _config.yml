@@ -9,7 +9,8 @@ markdown: kramdown
 permalink: /:title/
 future: false
 
-plugins: []
+plugins:
+  - jekyll-sitemap
 
 sass:
   style: compressed

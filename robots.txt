@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://contextandcringe.com/sitemap.xml
+
 # Block common AI training crawlers
 User-agent: GPTBot
 Disallow: /
