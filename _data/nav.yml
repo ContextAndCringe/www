@@ -1,0 +1,15 @@
+- title: Home
+  url: /
+  match_exact: true
+- title: How It Works
+  url: /how-it-works/
+  match: how-it-works
+- title: For Facilitators
+  url: /facilitators/
+  match: facilitators
+- title: Blog
+  url: /blog/
+  match: blog
+- title: About
+  url: /about/
+  match: about
