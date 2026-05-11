@@ -1,0 +1,35 @@
+%btn-base {
+  padding: 13px 28px; font-size: 14px; font-weight: 800;
+  letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer;
+  text-decoration: none; display: inline-block;
+}
+
+%btn-neo-shadow {
+  box-shadow: 4px 4px 0 var(--black);
+  transition: transform 0.1s, box-shadow 0.1s;
+  border: 3px solid var(--black);
+  &:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--black); }
+}
+
+.btn-primary {
+  @extend %btn-base;
+  @extend %btn-neo-shadow;
+  background: var(--orange); color: white;
+}
+.btn-secondary {
+  @extend %btn-base;
+  @extend %btn-neo-shadow;
+  background: var(--pink); color: white;
+}
+.btn-white {
+  @extend %btn-base;
+  @extend %btn-neo-shadow;
+  background: var(--white); color: var(--orange);
+}
+.btn-outline {
+  @extend %btn-base;
+  background: transparent; color: var(--white);
+  border: 3px solid var(--white);
+  transition: background 0.2s, color 0.2s;
+  &:hover { background: var(--white); color: var(--orange); }
+}

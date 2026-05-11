@@ -8,6 +8,9 @@ buy_url: "https://cybersecgames.com/collections/privacy/products/context-cringe"
 markdown: kramdown
 permalink: /:title/
 
+sass:
+  style: compressed
+
 exclude:
   - README.md
   - Gemfile

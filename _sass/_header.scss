@@ -1,0 +1,26 @@
+header {
+  background: var(--black);
+  position: sticky; top: 0; z-index: 100;
+  border-bottom: 3px solid var(--orange);
+}
+.nav-inner {
+  max-width: 1200px; margin: auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 32px;
+}
+.nav-logo img { height: 44px; display: block; }
+nav { display: flex; align-items: center; }
+nav a {
+  color: rgba(255,255,255,0.8); text-decoration: none;
+  font-weight: 600; font-size: 14px; margin-left: 28px;
+  letter-spacing: 0.03em; transition: color 0.2s;
+}
+nav a:hover, nav a.active { color: var(--orange); }
+nav .nav-cta {
+  background: var(--orange); color: var(--white);
+  padding: 9px 20px; font-weight: 800; font-size: 14px;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  border: 2px solid var(--orange); margin-left: 32px;
+  transition: background 0.2s, color 0.2s;
+}
+nav .nav-cta:hover { background: transparent; color: var(--orange); }

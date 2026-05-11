@@ -1,0 +1,14 @@
+.hazard {
+  height: 10px;
+  background: repeating-linear-gradient(
+    -45deg, var(--orange) 0px, var(--orange) 10px,
+    var(--black) 10px, var(--black) 20px
+  );
+}
+.hazard-pink {
+  height: 10px;
+  background: repeating-linear-gradient(
+    -45deg, var(--pink) 0px, var(--pink) 10px,
+    var(--black) 10px, var(--black) 20px
+  );
+}
