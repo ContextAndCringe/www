@@ -3,6 +3,8 @@
 .page-hero { background: var(--white); border-bottom: 1px solid #eee; }
 .page-hero h1 { color: var(--black); }
 .page-hero p { color: var(--muted); }
+.page-hero-inner > p { margin-bottom: 12px; }
+.page-hero-inner > p + p { margin-bottom: 16px; }
 .hero-accent { display: inline-block; font-size: 15px; font-weight: 700; font-style: italic; color: var(--black); background: var(--gray); border-left: 4px solid var(--orange); padding: 12px 20px; margin-top: 8px; }
 
 .ways-section { background: var(--gray); }
@@ -22,6 +24,7 @@
 .tier-body { padding: 20px 24px 28px; flex: 1; display: flex; flex-direction: column; gap: 16px; }
 .tier-body p { font-size: 14px; line-height: 1.65; color: #444; }
 .tier-quote { font-size: 14px; font-style: italic; color: var(--black); border-left: 3px solid #ddd; padding-left: 14px; font-weight: 500; }
+.tier-note { color: #555; font-style: italic; }
 .tier-list-label { font-size: 11px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
 .tier-tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 4px 10px; background: var(--gray); color: var(--black); margin: 3px 4px 0 0; }
 
@@ -32,6 +35,7 @@
 .why-pull p { font-size: 17px; line-height: 1.7; color: rgba(255,255,255,0.8); margin-bottom: 16px; }
 .why-pull p:last-child { margin-bottom: 0; }
 .why-signal { font-size: 22px; font-weight: 900; line-height: 1.3; }
+.why-signal strong { color: var(--orange); }
 
 .use-section { background: var(--gray); }
 .use-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap: 14px; margin-top: 36px; }
@@ -43,10 +47,10 @@
 .resource-card { border: 2px solid #eee; padding: 24px; display: flex; gap: 16px; align-items: flex-start; transition: border-color 0.2s, transform 0.15s; }
 .resource-card:hover { border-color: var(--orange); transform: translateY(-2px); }
 .resource-icon { width: 40px; height: 40px; border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; }
-.rc1 .resource-icon { background: rgba(84,199,219,0.15); }
+.rc1 .resource-icon,
+.rc4 .resource-icon { background: rgba(84,199,219,0.15); }
 .rc2 .resource-icon { background: rgba(244,119,48,0.15); }
 .rc3 .resource-icon { background: rgba(237,68,141,0.15); }
-.rc4 .resource-icon { background: rgba(84,199,219,0.15); }
 .resource-card h4 { font-size: 15px; font-weight: 800; margin-bottom: 4px; }
 .resource-card p { font-size: 13px; color: var(--muted); line-height: 1.5; }
 
@@ -55,6 +59,8 @@
 .cta-inner h2 { font-size: clamp(28px,4vw,50px); font-weight: 900; color: var(--white); letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 20px; text-transform: uppercase; }
 .cta-steps-text { font-size: 16px; color: rgba(255,255,255,0.6); line-height: 2; margin-bottom: 12px; }
 .cta-kicker { font-size: 18px; font-style: italic; font-weight: 700; color: var(--white); border-left: 4px solid var(--orange); padding: 14px 20px; background: rgba(255,255,255,0.04); margin: 28px 0 36px; line-height: 1.6; }
+.cta-kicker strong { color: var(--orange); }
+.cta-note { color: rgba(255,255,255,0.5); font-size: 15px; font-style: normal; font-weight: 400; }
 .cta-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
 .btn-orange { background: var(--orange); color: var(--white); border: 3px solid var(--orange); padding: 13px 28px; font-size: 14px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; display: inline-block; box-shadow: 4px 4px 0 rgba(255,255,255,0.1); transition: transform 0.1s, box-shadow 0.1s; }
 .btn-orange:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 rgba(255,255,255,0.1); }

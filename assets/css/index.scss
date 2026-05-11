@@ -52,16 +52,19 @@
 .what-text p { font-size: 17px; line-height: 1.75; color: #333; margin-bottom: 16px; }
 .what-text .snark { font-size: 16px; font-style: italic; color: var(--pink); font-weight: 500; line-height: 1.6; border-left: 3px solid var(--pink); padding-left: 16px; margin-top: 20px; }
 .game-photo-placeholder { background: #f2f2f2; height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #bbb; font-size: 13px; font-weight: 600; }
+.game-photo-placeholder img { max-width: 100%; max-height: 100; }
 
 .how-section { background: var(--blue); }
-.how-section .section-title { color: var(--black); }
+.how-section .section-title,
+.who-section .section-title { color: var(--black); }
+.how-section .section-label,
+.who-section .section-label { color: var(--black); opacity: 0.6; }
+.how-section .section-inner > p { font-size: 16px; color: var(--black); opacity: 0.7; margin-bottom: 0; }
 .cards-row { display: flex; gap: 0; margin: 36px 0 0; align-items: stretch; }
 .pitch-block { background: var(--black); border: 3px solid var(--black); box-shadow: 5px 5px 0 rgba(0,0,0,0.2); padding: 28px 32px; margin: 28px 0 0; }
 .pitch-block p { font-size: 15px; color: rgba(255,255,255,0.75); margin-bottom: 20px; line-height: 1.5; font-weight: 600; }
-/* index page vote pills have slightly more right padding than the shared base */
 .vote-pill { padding: 10px 20px; padding-left: 16px; }
-.token-comfy { border-radius: 50%; }
-.token-cringe { border-radius: 50%; }
+.token-comfy, .token-cringe { border-radius: 50%; }
 .how-footnote { margin-top: 16px; font-size: 13px; color: rgba(255,255,255,0.45); font-style: italic; }
 
 .why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 36px; }
@@ -72,7 +75,6 @@
 .why-card p { font-size: 14px; line-height: 1.65; color: #555; }
 
 .who-section { background: var(--blue); }
-.who-section .section-title { color: var(--black); }
 .who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 36px; }
 .who-col h3 { font-size: 12px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: var(--black); opacity: 0.6; margin-bottom: 16px; }
 .who-list { display: flex; flex-direction: column; gap: 10px; }

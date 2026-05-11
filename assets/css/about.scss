@@ -1,8 +1,12 @@
 ---
 ---
 .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
-.why-text p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 16px; }
-.why-text p:last-child { margin-bottom: 0; }
+.why-text p,
+.game-text p,
+.philosophy-text p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 16px; }
+.why-text p:last-child,
+.game-text p:last-child,
+.philosophy-text p:last-child { margin-bottom: 0; }
 .why-pull { background: var(--blue); border: 3px solid var(--black); box-shadow: 5px -5px 0 var(--black); padding: 32px; }
 .why-pull p { font-size: 16px; line-height: 1.75; color: var(--black); margin-bottom: 14px; }
 .why-pull p:last-child { margin-bottom: 0; }
@@ -10,8 +14,7 @@
 
 .game-section { background: var(--gray); }
 .game-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
-.game-text p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 16px; }
-.game-text p:last-child { margin-bottom: 0; }
+
 .game-demo { background: var(--white); border: 3px solid var(--black); box-shadow: 5px -5px 0 var(--black); padding: 32px; display: flex; flex-direction: column; gap: 20px; }
 .mini-card-row { display: flex; gap: 8px; align-items: center; }
 .mini-card { flex: 1; background: var(--white); border: 2px solid var(--black); padding: 14px 10px; text-align: center; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.04em; }
@@ -24,6 +27,7 @@
 .mini-vote.comfy  { border-left: 4px solid var(--blue); }
 .mini-vote.cringe { border-left: 4px solid var(--pink); }
 .game-note { font-size: 13px; font-style: italic; color: var(--muted); border-top: 1px solid #eee; padding-top: 16px; line-height: 1.6; }
+.demo-label { font-size: 13px; color: var(--muted); font-weight: 600; text-align: center; letter-spacing: 0.05em; text-transform: uppercase; }
 
 .creators-section { background: var(--white); }
 .creators-intro { font-size: 16px; color: var(--muted); margin-bottom: 48px; line-height: 1.7; max-width: 640px; }
@@ -44,8 +48,7 @@
 
 .philosophy-section { background: var(--gray); }
 .philosophy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
-.philosophy-text p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 16px; }
-.philosophy-text p:last-child { margin-bottom: 0; }
+
 .philosophy-aside { background: var(--black); color: var(--white); padding: 32px; border-top: 6px solid var(--orange); }
 .philosophy-aside p { font-size: 15px; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 14px; }
 .philosophy-aside .aside-kicker { font-size: 18px; font-weight: 800; color: var(--orange); font-style: italic; margin-bottom: 0; }
