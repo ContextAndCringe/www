@@ -2,67 +2,7 @@
 layout: default
 title: Home
 description: A card game about apps, data, and uncomfortable design choices.
-extra_css: |
-  .hero { background: var(--blue); position: relative; overflow: hidden; padding: 80px 32px 64px; min-height: 85vh; display: flex; align-items: center; }
-  .hero-waves { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
-  .hero-waves svg { position: absolute; opacity: 0.12; }
-  .hero-waves .w1 { top:-10%; left:-8%; width:55%; animation: drift1 14s ease-in-out infinite alternate; }
-  .hero-waves .w2 { bottom:-15%; right:-8%; width:52%; animation: drift2 17s ease-in-out infinite alternate; }
-  .hero-waves .w3 { top:30%; right:8%; width:28%; animation: drift1 20s ease-in-out infinite alternate-reverse; }
-  @keyframes drift1 { from { transform:translate(0,0) rotate(0deg); } to { transform:translate(22px,16px) rotate(6deg); } }
-  @keyframes drift2 { from { transform:translate(0,0) rotate(0deg); } to { transform:translate(-16px,22px) rotate(-5deg); } }
-  .hero-inner { position:relative; z-index:2; max-width:900px; margin:auto; width:100%; display:flex; flex-direction:column; gap:28px; align-items:center; text-align:center; }
-  .hero-logo img { height:clamp(80px,14vw,160px); display:block; margin:0 auto; }
-  .hero-tagline { font-size:clamp(20px,2.5vw,28px); font-weight:700; color:var(--black); line-height:1.3; max-width:640px; }
-  .hero-banner { background:var(--black); display:inline-flex; flex-direction:row; padding:14px 28px; gap:0; align-items:center; }
-  .hero-banner-line { color:var(--white); font-size:clamp(14px,1.6vw,20px); font-weight:800; letter-spacing:0.04em; text-transform:uppercase; white-space:nowrap; }
-  .hero-banner-sep { color:var(--orange); font-size:clamp(14px,1.6vw,20px); font-weight:900; padding:0 12px; }
-  .hero-sub { font-size:16px; color:var(--black); opacity:0.72; max-width:560px; line-height:1.6; font-weight:500; }
-  .hero-buttons { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
-  .what-section { background:var(--white); }
-  .what-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; margin-top:8px; }
-  .what-text p { font-size:17px; line-height:1.75; color:#333; margin-bottom:16px; }
-  .what-text .snark { font-size:16px; font-style:italic; color:var(--pink); font-weight:500; line-height:1.6; border-left:3px solid var(--pink); padding-left:16px; margin-top:20px; }
-  .game-photo-placeholder { background:#f2f2f2; height:300px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#bbb; font-size:13px; font-weight:600; }
-  .how-section { background:var(--blue); }
-  .how-section .section-title { color:var(--black); }
-  .cards-row { display:flex; gap:0; margin:36px 0 0; align-items:stretch; }
-  .card-plus { display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:900; color:var(--black); padding:0 12px; flex-shrink:0; }
-  .pitch-block { background:var(--black); border:3px solid var(--black); box-shadow:5px 5px 0 rgba(0,0,0,0.2); padding:28px 32px; margin:28px 0 0; }
-  .pitch-block p { font-size:15px; color:rgba(255,255,255,0.75); margin-bottom:20px; line-height:1.5; font-weight:600; }
-  .vote-row { display:flex; gap:16px; flex-wrap:wrap; }
-  .vote-pill { display:flex; align-items:center; gap:14px; padding:10px 20px; background:var(--white); border:none; border-left:5px solid var(--black); font-size:14px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; color:var(--black); padding-left:16px; }
-  .vote-pill.comfy { border-left-color:var(--blue); }
-  .vote-pill.cringe-pill { border-left-color:var(--pink); }
-  .token-comfy { background-image:url('/assets/images/context-token.png'); width:44px; height:44px; border-radius:50%; }
-  .token-cringe { background-image:url('/assets/images/cringe-token.png'); width:44px; height:44px; border-radius:50%; }
-  .how-footnote { margin-top:16px; font-size:13px; color:rgba(255,255,255,0.45); font-style:italic; }
-  .why-section { background:var(--white); }
-  .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:36px; }
-  .why-card { border:3px solid var(--black); padding:28px 24px; box-shadow:5px 5px 0 var(--black); transition:transform 0.15s,box-shadow 0.15s; }
-  .why-card:hover { transform:translate(-2px,-2px); box-shadow:7px 7px 0 var(--black); }
-  .why-card .why-num { font-size:13px; font-weight:800; letter-spacing:0.15em; color:var(--orange); margin-bottom:12px; text-transform:uppercase; }
-  .why-card h3 { font-size:18px; font-weight:800; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.02em; }
-  .why-card p { font-size:14px; line-height:1.65; color:#555; }
-  .who-section { background:var(--blue); }
-  .who-section .section-title { color:var(--black); }
-  .who-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:36px; }
-  .who-col h3 { font-size:12px; font-weight:800; letter-spacing:0.18em; text-transform:uppercase; color:var(--black); opacity:0.6; margin-bottom:16px; }
-  .who-list { display:flex; flex-direction:column; gap:10px; }
-  .who-item { background:var(--black); color:var(--white); padding:12px 18px; font-size:14px; font-weight:600; border-left:4px solid var(--orange); }
-  .who-col:nth-child(2) .who-item { border-left-color:var(--pink); }
-  .who-note { margin-top:28px; font-size:13px; color:var(--black); opacity:0.6; font-style:italic; }
-  .cta-section { background:var(--orange); padding:80px 32px; position:relative; overflow:hidden; }
-  .cta-section::before { content:""; position:absolute; inset:0; background:repeating-linear-gradient(-45deg,transparent 0,transparent 30px,rgba(0,0,0,0.04) 30px,rgba(0,0,0,0.04) 60px); pointer-events:none; }
-  .cta-inner { position:relative; z-index:1; max-width:800px; margin:auto; }
-  .cta-inner h2 { font-size:clamp(30px,5vw,54px); font-weight:900; color:var(--white); text-transform:uppercase; letter-spacing:-0.02em; line-height:1.05; margin-bottom:32px; }
-  .cta-steps { display:flex; gap:0; margin-bottom:40px; }
-  .cta-step { flex:1; background:var(--black); padding:24px 20px; text-align:center; border:2px solid rgba(255,255,255,0.1); position:relative; }
-  .cta-step:not(:last-child)::after { content:"→"; position:absolute; right:-16px; top:50%; transform:translateY(-50%); color:var(--white); font-size:20px; font-weight:900; z-index:2; }
-  .cta-step .step-num { font-size:11px; font-weight:800; letter-spacing:0.2em; color:var(--orange); text-transform:uppercase; margin-bottom:8px; }
-  .cta-step .step-text { font-size:15px; font-weight:700; color:var(--white); line-height:1.4; }
-  .cta-buttons { display:flex; gap:16px; flex-wrap:wrap; margin-bottom:20px; }
-  .cta-sub { font-size:14px; color:rgba(255,255,255,0.7); font-style:italic; }
+page_css: /assets/css/index.css
 ---
 
 <!-- HERO -->

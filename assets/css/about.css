@@ -1,0 +1,69 @@
+.page-hero { background: var(--black); padding: 64px 32px 56px; }
+.page-hero h1 { color: var(--white); }
+.page-hero p { color: rgba(255,255,255,0.55); max-width: 640px; }
+
+.why-section { background: var(--white); }
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+.why-text p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 16px; }
+.why-text p:last-child { margin-bottom: 0; }
+.why-pull { background: var(--blue); border: 3px solid var(--black); box-shadow: 5px -5px 0 var(--black); padding: 32px; }
+.why-pull p { font-size: 16px; line-height: 1.75; color: var(--black); margin-bottom: 14px; }
+.why-pull p:last-child { margin-bottom: 0; }
+.why-pull .kicker { font-size: 19px; font-weight: 800; font-style: italic; border-top: 2px solid rgba(0,0,0,0.15); padding-top: 16px; margin-top: 4px; }
+
+.game-section { background: var(--gray); }
+.game-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.game-text p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 16px; }
+.game-text p:last-child { margin-bottom: 0; }
+.game-demo { background: var(--white); border: 3px solid var(--black); box-shadow: 5px -5px 0 var(--black); padding: 32px; display: flex; flex-direction: column; gap: 20px; }
+.mini-card-row { display: flex; gap: 8px; align-items: center; }
+.mini-card { flex: 1; background: var(--white); border: 2px solid var(--black); padding: 14px 10px; text-align: center; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.04em; }
+.mini-card.app  { border-top: 5px solid var(--orange); color: var(--orange); }
+.mini-card.feat { border-top: 5px solid var(--pink); color: var(--pink); }
+.mini-card.data { border-top: 5px solid var(--blue); color: var(--blue); }
+.mini-plus { font-size: 18px; font-weight: 900; color: var(--black); flex-shrink: 0; }
+.mini-vote-row { display: flex; gap: 10px; }
+.mini-vote { flex: 1; padding: 10px 14px; border: 2px solid var(--black); font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; background: var(--white); }
+.mini-vote.comfy  { border-left: 4px solid var(--blue); }
+.mini-vote.cringe { border-left: 4px solid var(--pink); }
+.game-note { font-size: 13px; font-style: italic; color: var(--muted); border-top: 1px solid #eee; padding-top: 16px; line-height: 1.6; }
+
+.creators-section { background: var(--white); }
+.creators-intro { font-size: 16px; color: var(--muted); margin-bottom: 48px; line-height: 1.7; max-width: 640px; }
+.creator-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.creator-card { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: start; }
+.creator-photo-wrap { width: 140px; height: 160px; position: relative; cursor: pointer; perspective: 900px; flex-shrink: 0; }
+.creator-photo-inner { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform 0.55s cubic-bezier(0.4,0,0.2,1); }
+.creator-photo-wrap:hover .creator-photo-inner { transform: rotateY(180deg); }
+.creator-face,
+.creator-hero { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; overflow: hidden; }
+.creator-face img { width: 140px; height: 160px; object-fit: cover; object-position: center top; border: 3px solid var(--black); box-shadow: 4px -4px 0 var(--black); display: block; }
+.creator-hero { transform: rotateY(180deg); background: var(--black); border: 3px solid var(--black); box-shadow: 4px -4px 0 rgba(0,0,0,0.3); display: flex; align-items: flex-end; justify-content: center; }
+.creator-hero img { width: 100%; height: 160px; object-fit: contain; object-position: bottom center; display: block; }
+.hover-hint { position: absolute; bottom: -20px; left: 0; right: 0; text-align: center; font-size: 9px; font-weight: 800; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; opacity: 0.7; transition: opacity 0.2s; }
+.creator-photo-wrap:hover .hover-hint { opacity: 0; }
+.creator-info { padding-top: 4px; }
+.creator-name { font-size: 22px; font-weight: 900; letter-spacing: -0.01em; margin-bottom: 2px; }
+.creator-role { font-size: 12px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange); margin-bottom: 14px; }
+.creator-bio { font-size: 14px; line-height: 1.7; color: #444; }
+
+.philosophy-section { background: var(--gray); }
+.philosophy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.philosophy-text p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 16px; }
+.philosophy-text p:last-child { margin-bottom: 0; }
+.philosophy-aside { background: var(--black); color: var(--white); padding: 32px; border-top: 6px solid var(--orange); }
+.philosophy-aside p { font-size: 15px; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 14px; }
+.philosophy-aside .aside-kicker { font-size: 18px; font-weight: 800; color: var(--orange); font-style: italic; margin-bottom: 0; }
+
+.goal-section { background: var(--white); }
+.goal-block { max-width: 680px; margin: 0 auto; text-align: center; padding: 24px 0; }
+.goal-block .section-label { display: block; margin-bottom: 20px; }
+.goal-block h2 { font-size: clamp(28px,4vw,46px); font-weight: 900; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 28px; }
+.goal-block p { font-size: 17px; line-height: 1.8; color: #444; margin-bottom: 16px; }
+.goal-kicker { display: inline-block; background: var(--black); color: var(--white); font-size: 17px; font-weight: 700; font-style: italic; padding: 20px 28px; margin: 24px 0; border-left: 5px solid var(--orange); text-align: left; line-height: 1.7; }
+
+.cta-section { background: var(--orange); padding: 72px 32px; text-align: center; position: relative; overflow: hidden; }
+.cta-section::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(-45deg,transparent 0,transparent 30px,rgba(0,0,0,0.04) 30px,rgba(0,0,0,0.04) 60px); pointer-events: none; }
+.cta-inner { position: relative; z-index: 1; max-width: 600px; margin: auto; }
+.cta-inner h2 { font-size: clamp(28px,4vw,48px); font-weight: 900; color: var(--white); text-transform: uppercase; letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 32px; }
+.cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
