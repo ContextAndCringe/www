@@ -1,8 +1,5 @@
-.page-hero { background: var(--black); padding: 64px 32px 56px; }
-.page-hero h1 { color: var(--white); }
-.page-hero p { color: rgba(255,255,255,0.55); max-width: 640px; }
+/* .page-hero base styles (black bg, padding, h1, p) are provided by main.css */
 
-.why-section { background: var(--white); }
 .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
 .why-text p { font-size: 16px; line-height: 1.8; color: #444; margin-bottom: 16px; }
 .why-text p:last-child { margin-bottom: 0; }
@@ -63,7 +60,6 @@
 .goal-kicker { display: inline-block; background: var(--black); color: var(--white); font-size: 17px; font-weight: 700; font-style: italic; padding: 20px 28px; margin: 24px 0; border-left: 5px solid var(--orange); text-align: left; line-height: 1.7; }
 
 .cta-section { background: var(--orange); padding: 72px 32px; text-align: center; position: relative; overflow: hidden; }
-.cta-section::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(-45deg,transparent 0,transparent 30px,rgba(0,0,0,0.04) 30px,rgba(0,0,0,0.04) 60px); pointer-events: none; }
 .cta-inner { position: relative; z-index: 1; max-width: 600px; margin: auto; }
 .cta-inner h2 { font-size: clamp(28px,4vw,48px); font-weight: 900; color: var(--white); text-transform: uppercase; letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 32px; }
 .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
