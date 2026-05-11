@@ -1,6 +1,4 @@
-.page-hero { background: var(--black); padding: 64px 32px 56px; }
-.page-hero h1 { color: var(--white); }
-.page-hero p { color: rgba(255,255,255,0.55); max-width: 640px; }
+/* .page-hero base styles (black bg, padding, h1, p) are provided by main.css */
 
 .blog-section { background: var(--white); }
 .empty-state { text-align: center; padding: 80px 32px; border: 2px dashed #ddd; }

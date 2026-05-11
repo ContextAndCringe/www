@@ -1,5 +1,5 @@
+/* .page-hero h1 color is provided by main.css; only override layout/spacing here */
 .page-hero { background: var(--black); padding: 56px 32px 48px; text-align: center; }
-.page-hero h1 { color: var(--white); }
 .page-hero p { color: rgba(255,255,255,0.55); margin: 0 auto; }
 
 .mode-tabs {
@@ -33,7 +33,6 @@
 .section-subtitle { font-size: 18px; font-weight: 600; color: var(--black); margin-bottom: 32px; }
 
 .card-trio { display: flex; gap: 0; margin: 40px 0 16px; align-items: stretch; }
-.card-plus { display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 900; color: var(--black); padding: 0 12px; flex-shrink: 0; }
 .card-trio-label { text-align: center; font-size: 13px; font-weight: 700; color: var(--black); opacity: 0.6; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 40px; }
 
 .steps { display: flex; flex-direction: column; gap: 0; margin: 0 0 40px; }
@@ -47,10 +46,6 @@
 
 .vote-block { background: var(--blue); border: 3px solid var(--orange); box-shadow: 5px 5px 0 rgba(0,0,0,0.2); padding: 28px 32px; margin: 0 0 40px; }
 .vote-block p { font-size: 15px; color: var(--black); font-weight: 700; margin-bottom: 20px; }
-.vote-row { display: flex; gap: 16px; flex-wrap: wrap; }
-.vote-pill { display: flex; align-items: center; gap: 14px; padding: 10px 16px; background: var(--white); border: none; border-left: 5px solid var(--black); font-size: 14px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--black); }
-.vote-pill.comfy { border-left-color: var(--blue); }
-.vote-pill.cringe-pill { border-left-color: var(--pink); }
 .scoring-note { font-size: 14px; color: var(--black); font-style: italic; line-height: 1.6; border-left: 3px solid var(--black); padding: 16px 16px 16px 20px; margin-bottom: 0; background: rgba(255,255,255,0.35); }
 
 .why-block { background: var(--black); color: var(--white); padding: 48px 40px; margin-top: 40px; border-top: 6px solid var(--orange); border-bottom: 6px solid var(--orange); }
