@@ -6,7 +6,7 @@
   <title>{% if page.title %}{{ page.title }} - Context & Cringe{% else %}Context & Cringe{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  {% if page.extra_css %}<style>{{ page.extra_css }}</style>{% endif %}
+  {% if page.page_css %}<link rel="stylesheet" href="{{ page.page_css | relative_url }}">{% endif %}
 </head>
 <body>
   {% include header.html %}
