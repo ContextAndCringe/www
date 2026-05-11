@@ -1,0 +1,39 @@
+---
+---
+.error-hero .page-hero-inner { margin: auto; text-align: center; }
+.error-hero p { margin: 0 auto 10px; }
+
+.error-section { background: var(--white); }
+.error-inner { display: flex; flex-direction: column; align-items: center; gap: 36px; }
+
+.error-combo { display: flex; gap: 12px; align-items: stretch; max-width: 520px; width: 100%; }
+.error-card { flex: 1; border: 2px solid var(--black); padding: 20px 12px; text-align: center; }
+.error-card.app  { border-top: 5px solid var(--orange); }
+.error-card.feat { border-top: 5px solid var(--pink); }
+.error-card.data { border-top: 5px solid var(--blue); }
+.error-card-type { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 8px; }
+.error-card-value { font-size: 14px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.3; }
+.error-card.app  .error-card-value { color: var(--orange); }
+.error-card.feat .error-card-value { color: var(--pink); }
+.error-card.data .error-card-value { color: var(--blue); }
+.error-plus { font-size: 20px; font-weight: 900; flex-shrink: 0; align-self: center; }
+
+.error-verdict { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.error-verdict-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+.error-vote { display: flex; border: 2px solid var(--black); max-width: 340px; width: 100%; }
+.error-vote-pill { flex: 1; padding: 14px 16px; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; text-align: center; }
+.error-vote-pill.comfy  { border-right: 1px solid var(--black); color: #bbb; }
+.error-vote-pill.cringe { background: var(--pink); color: var(--white); }
+
+.error-note { font-size: 15px; color: var(--muted); font-style: italic; max-width: 460px; text-align: center; line-height: 1.7; margin: 0; }
+
+.cta-section { background: var(--orange); padding: 72px 32px; text-align: center; position: relative; overflow: hidden; }
+.cta-inner { position: relative; z-index: 1; max-width: 600px; margin: auto; }
+.cta-inner h2 { font-size: clamp(28px,4vw,48px); font-weight: 900; color: var(--white); text-transform: uppercase; letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 32px; }
+.cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+@media (max-width: 520px) {
+  .error-combo { flex-wrap: wrap; justify-content: center; }
+  .error-card { min-width: 140px; flex: 0 1 auto; }
+  .error-plus { width: 100%; text-align: center; padding: 4px 0; }
+}
