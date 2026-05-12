@@ -96,3 +96,7 @@
 @media (max-width: 600px) {
   .cards-row { flex-direction: column; align-items: center; }
 }
+
+@media (max-width: 700px) {
+  .why-grid { grid-template-columns: 1fr; }
+}
