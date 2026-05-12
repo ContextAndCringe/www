@@ -100,3 +100,8 @@
 @media (max-width: 700px) {
   .why-grid { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 700px) {
+  .what-grid { grid-template-columns: 1fr; gap: 32px; }
+  .who-grid  { grid-template-columns: 1fr; gap: 24px; }
+}
