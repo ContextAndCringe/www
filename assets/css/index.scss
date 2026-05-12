@@ -105,3 +105,7 @@
   .what-grid { grid-template-columns: 1fr; gap: 32px; }
   .who-grid  { grid-template-columns: 1fr; gap: 24px; }
 }
+
+@media (max-width: 600px) {
+  .hero-banner { width: 100%; overflow: hidden; justify-content: center; }
+}
