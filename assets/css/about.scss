@@ -71,5 +71,7 @@
   .creator-cards   { grid-template-columns: 1fr; }
   .creator-card    { grid-template-columns: 1fr; }
   .creator-photo-wrap { width: 120px; height: 140px; }
+  .creator-face img { width: 120px; height: 140px; }
+  .creator-hero img { height: 140px; }
   .philosophy-grid { grid-template-columns: 1fr; gap: 32px; }
 }
