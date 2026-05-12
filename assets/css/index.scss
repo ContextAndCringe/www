@@ -92,3 +92,20 @@
 .cta-step .step-text { font-size: 15px; font-weight: 700; color: var(--white); line-height: 1.4; }
 .cta-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
 .cta-sub { font-size: 14px; color: rgba(255,255,255,0.7); font-style: italic; }
+
+@media (max-width: 600px) {
+  .cards-row { flex-direction: column; align-items: center; }
+}
+
+@media (max-width: 700px) {
+  .why-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .what-grid { grid-template-columns: 1fr; gap: 32px; }
+  .who-grid  { grid-template-columns: 1fr; gap: 24px; }
+}
+
+@media (max-width: 600px) {
+  .hero-banner { width: 100%; overflow: hidden; justify-content: center; }
+}

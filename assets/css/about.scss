@@ -64,3 +64,14 @@
 .cta-inner { position: relative; z-index: 1; max-width: 600px; margin: auto; }
 .cta-inner h2 { font-size: clamp(28px,4vw,48px); font-weight: 900; color: var(--white); text-transform: uppercase; letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 32px; }
 .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+@media (max-width: 700px) {
+  .why-grid        { grid-template-columns: 1fr; gap: 32px; }
+  .game-grid       { grid-template-columns: 1fr; gap: 32px; }
+  .creator-cards   { grid-template-columns: 1fr; }
+  .creator-card    { grid-template-columns: 1fr; }
+  .creator-photo-wrap { width: 120px; height: 140px; }
+  .creator-face img { width: 120px; height: 140px; }
+  .creator-hero img { height: 140px; }
+  .philosophy-grid { grid-template-columns: 1fr; gap: 32px; }
+}
