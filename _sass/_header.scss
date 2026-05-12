@@ -24,3 +24,34 @@ nav .nav-cta {
   transition: background 0.2s, color 0.2s;
 }
 nav .nav-cta:hover { background: transparent; color: var(--orange); }
+
+.nav-toggle-input { position: absolute; opacity: 0; pointer-events: none; }
+.nav-toggle-label { display: none; }
+
+@media (max-width: 768px) {
+  .nav-inner { flex-wrap: wrap; padding: 12px 20px; }
+
+  .nav-toggle-label {
+    display: flex; flex-direction: column; justify-content: center;
+    gap: 5px; cursor: pointer; padding: 8px 4px; margin-left: auto;
+  }
+  .nav-toggle-label span {
+    display: block; width: 22px; height: 2px;
+    background: rgba(255,255,255,0.85); border-radius: 1px;
+    transition: transform 0.25s, opacity 0.2s;
+  }
+
+  nav {
+    display: none; width: 100%; flex-direction: column; align-items: stretch;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding: 8px 0 20px; margin-top: 8px;
+  }
+  nav a { margin-left: 0; padding: 12px 20px; font-size: 15px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  nav a:last-child { border-bottom: none; }
+  nav .nav-cta { display: block; margin: 12px 20px 0; text-align: center; padding: 12px 20px; }
+
+  .nav-toggle-input:checked ~ nav { display: flex; }
+  .nav-toggle-input:checked ~ .nav-toggle-label span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle-input:checked ~ .nav-toggle-label span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+  .nav-toggle-input:checked ~ .nav-toggle-label span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+}
