@@ -92,3 +92,7 @@
 .cta-step .step-text { font-size: 15px; font-weight: 700; color: var(--white); line-height: 1.4; }
 .cta-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
 .cta-sub { font-size: 14px; color: rgba(255,255,255,0.7); font-style: italic; }
+
+@media (max-width: 600px) {
+  .cards-row { flex-direction: column; align-items: center; }
+}
